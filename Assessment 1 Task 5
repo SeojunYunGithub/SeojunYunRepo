@@ -1,0 +1,50 @@
+using System;
+class program
+{
+    public static void Main()
+    {
+        Console.WriteLine("What is your Math score?");
+        int score1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("What is your Physics score?");
+        int score2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("What is your Chemistry score?");
+        int score3 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("What is your Computer Science score?");
+        int score4 = Convert.ToInt32(Console.ReadLine());
+        int a = (score1 + score2 + score3 + score4) / 4;
+
+        
+        Console.WriteLine("Your Average score of 4 subjects is {0}.", a);
+
+        switch (a/10) {
+            case 10 : 
+                Console.WriteLine("Excellent! Your grade is A!");
+                break;
+
+            case 9:
+                Console.WriteLine("Excellent! Your grade is A!");
+                break;
+
+            case 8 :
+                Console.WriteLine("Good! Your grade is B!");
+                break;
+
+            case 7 :
+                Console.WriteLine("Satisfactory. Your grade is C.");
+                break;
+
+            case 6 :
+                Console.WriteLine("Pass. Your grade is D.");
+                break;
+
+            case 5:
+                Console.WriteLine("Pass. Your grade is D.");
+                break;
+
+            default :
+                Console.WriteLine("Fail. Your grade is F.");
+                break;
+
+        }
+    }
+}
